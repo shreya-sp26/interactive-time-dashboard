@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Stopwatch</title>
+    <link rel="stylesheet" href="watch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+ </head>
+<body>
+    <div class="name-popup" id="name-popup">
+    <div class="popup-content">
+        <h2>Welcome! ♡</h2>
+        <input type="text" id="visitor-name" placeholder="Enter your name">
+        <button id="welcome-btn">Let's Go ♡</button>
+    </div>
+</div>
+<div class="hello-screen" id="hello-screen">
+    <h1 id="hello-name"></h1>
+    <img src="hello.gif" alt="Waving GIF">
+</div>
+<div id="main-content" style="display: none;">
+    <header>
+        <nav>
+            <a href="#clock">
+                <img src="clock-icon.png" alt=""> Clock</a>
+            <a href="#stopwatch">
+                <img src="stopwatch-icon.png" alt=""> Stopwatch</a>
+            <a href="#countdown">
+                <img src="countdown-icon.png" alt=""> Countdown </a>
+            <a href="#alarm">
+                <img src="alarm-icon.png" alt=""> Alarm</a>
+        </nav>
+    </header>
+    <main>
+        <div class="dashboard">
+            <div class="leftside">
+                <aside class="leftpart">
+                <div class="side-heading">
+                    <h2>Day Habit</h2>
+                    <img src="../../../Downloads/habit-final.png" alt="">
+                </div>
+                <h3>My Little Habits ♡</h3>
+                <p>Today's Goals </p>
+                <div class="add-habit">
+                    <input type="text" id="habit-input" placeholder="Enter your habit">
+                    <button id="add-habit">Add</button>
+                </div>
+                <div id="habit-list"></div>
+                <p class="progress" id="progress">0 habits completed ♡</p>
+            </aside>
+            <!-- <img src="purple left.png" class="side-img" alt="Habit Image"> -->
+            </div>
+            <div class="center">
+                <section id="clock">
+                    <h2>Digital Clock</h2>
+                    <div class="clockbox">
+                        <p id="time">00:00:00</p>
+                        <p id="date">Sunday, 15 November 2026</p>
+                    </div>
+                </section>
+                <section id="stopwatch">
+                    <h2>Stopwatch</h2>
+                    <div class="stopwatchbox">
+                        <p id="stopwatch-time">00:00:00</p>
+                        <div class="stopwatch-btns">
+                            <button id="start">Start</button>
+                            <button id="pause">Pause</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="countdown">
+                    <h2>Countdown</h2>
+                    <div class="countdownbox">
+                        <p id="countdown-time">00:00:00</p>
+                        <div class="countdwn-input">
+                            <input type="number" id="hours" placeholder="Hours" min="0">
+                            <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+                            <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+                        </div>
+                        <div class="countdown-btn">
+                            <button type="button" id="countdown-start">Start</button>
+                            <button type="button" id="countdown-pause">Pause</button>
+                            <button type="reset" id="countdown-reset">Reset</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="alarm">
+                    <h2>Alarm</h2>
+                    <div class="alarmbox">
+                        <input type="time" id="alarm-time">
+                        <button id="set-alarm">Set Alarm</button>
+                        <p id="alarm-message"></p>
+                        <button id="stop-alarm">Stop Alarm</button>
+                        <audio id="alarm-sound" src="alarm.mp3"></audio>
+                    </div>
+                </section>
+                <div class="bottom-gif">
+                    <img src="cat walking.gif" class="clock-gif" id="section-gif" alt="Cute GIF">
+                    <div class="quote-card">
+                        <h2 >✿ A Little Reminder ✿</h2>
+                        <p id="daily-quote">You're doing better than you think! </p>
+                        <span>Take a breath. You've got this ♡</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <aside class="rightpart">
+                    <div class="side-heading">
+                        <h2>Quick Links</h2>
+                        <img src="../../../Downloads/linkkkk.png" alt="">
+                    </div>
+                    <div class="quicklink">
+                        <a href="https://mycalendar26.netlify.app" target="_blank">My Calendar ↗</a>
+                    </div>
+                    <div class="quicklink">
+                        <a href="	https://pomofocus.io/" target="_blank">Pomodoro Timer  ↗</a>
+                    </div>
+                    <div class="quicklink">
+                        <a href="https://todo-list-s2.netlify.app" target="_blank">My To-Do List ↗</a>
+                    </div>
+                    <div class="quicklink">
+                        <a href="https://www.w3schools.com/" target="_blank">Coding Practice ↗</a>
+                    </div>
+                    <div class="quicklink">
+                        <a href="https://open.spotify.com/" target="_blank">Music ↗</a>
+                    </div>
+            </aside>
+            <!-- <img src="right.png" class="side-img" alt="Links Image"> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>♡ Daisy O'Clock ♡</h2>
+        <p>Make every second count!</p>
+        <div class="footer-links">
+            <a href="#clock">Clock</a>
+            <a href="#stopwatch">Stopwatch</a>
+            <a href="#countdown">Countdown</a>
+            <a href="#alarm">Alarm</a>
+        </div>
+        <p class="copyright">Made with ♡ by Me | © 2026 Daisy O'Clock</p>
+    </footer>
+</div>
+    
+    <script type="text/javascript" src="watch.js"></script>
+</body>
+</html>
